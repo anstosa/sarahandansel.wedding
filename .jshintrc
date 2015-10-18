@@ -1,0 +1,37 @@
+{
+    "maxerr"        : 10,
+    "bitwise"       : true,
+    "curly"         : true,
+    "eqeqeq"        : true,
+    "noarg"         : true,
+    "nonew"         : true,
+    "undef"         : true,
+    "unused"        : true,
+    "strict"        : true,
+    "globalstrict"  : true,
+    "browser"       : true,
+    "devel"         : true,
+    "jquery"        : true,
+    "jasmine"       : true,
+    "nonstandard"   : true,
+    "node"          : true,
+    "predef"        : [
+        "extrahop",
+        "createLayeredFrame",
+
+        /* Libs */
+        "_",
+        "angular",
+        "performance",
+        "d3",
+        "module",
+        "moment",
+        "nv",
+        "Rickshaw",
+        "JSZip",
+        "screenfull",
+
+        /* Polyfill */
+        "saveAs"
+    ]
+}

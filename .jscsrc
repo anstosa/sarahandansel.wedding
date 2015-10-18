@@ -1,0 +1,69 @@
+{
+    "disallowEmptyBlocks": true,
+    "disallowImplicitTypeConversion": [
+        "numeric",
+        "boolean",
+        "binary",
+        "string"
+    ],
+    "disallowYodaConditions": true,
+    "disallowTrailingWhitespace": true,
+    "disallowQuotedKeysInObjects": true,
+    "disallowMixedSpacesAndTabs": true,
+    "disallowMultipleLineStrings": true,
+    "disallowOperatorBeforeLineBreak": ["."],
+    "disallowSpaceBeforeSemicolon": true,
+    "disallowNewlineBeforeBlockStatements": true,
+    "disallowSpaceAfterPrefixUnaryOperators": true,
+    "disallowSpaceBeforePostfixUnaryOperators": true,
+    "requireSpaceBeforeBlockStatements": true,
+    "disallowSpacesInCallExpression": true,
+    "disallowSpacesInFunctionDeclaration": {
+        "beforeOpeningRoundBrace": true
+    },
+    "requireSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningRoundBrace": true
+    },
+    "disallowSpacesInNamedFunctionExpression": {
+        "beforeOpeningRoundBrace": true
+    },
+    "disallowSpacesInsideArrayBrackets": true,
+    "disallowSpacesInsideBrackets": true,
+    "disallowSpacesInsideObjectBrackets": true,
+    "disallowSpacesInsideParentheses": true,
+    "disallowSpacesInsideParenthesizedExpression": true,
+    "disallowTrailingComma": true,
+    "maximumLineLength": 80,
+    "validateQuoteMarks": "'",
+    "requireBlocksOnNewline": 1,
+    "requireCapitalizedConstructors": true,
+    "requireCommaBeforeLineBreak": true,
+    "requireOperatorBeforeLineBreak": true,
+    "requireSemicolons": true,
+    "requireCurlyBraces": [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "try",
+        "catch"
+    ],
+    "requireSpaceAfterKeywords": [
+        "do",
+        "for",
+        "if",
+        "else",
+        "try",
+        "while",
+        "with"
+    ],
+    "requireDotNotation": true,
+    "requireSpacesInConditionalExpression": true,
+    "requireSpacesInForStatement": true,
+    "requireKeywordsOnNewLine": ["else"],
+    "validateIndentation": 4,
+    "requireSpaceAfterBinaryOperators": true,
+    "requireSpaceBeforeBinaryOperators": true,
+    "requireSpaceBetweenArguments": true
+}
