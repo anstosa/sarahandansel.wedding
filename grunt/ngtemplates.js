@@ -2,7 +2,7 @@
 
 module.exports = {
     compile: {
-        src: 'dist/partials/*',
+        src: 'dist/partials/*.html',
         dest: 'dist/js/templates.js',
         options: {
             htmlmin: {
@@ -13,9 +13,9 @@ module.exports = {
                 removeEmptyAttributes         : false,
                 removeRedundantAttributes     : false,
                 removeScriptTypeAttributes    : false,
-                removeStyleLinkTypeAttributes : false
+                removeStyleLinkTypeAttributes : false,
             },
-            module: 'wedding'
-        }
-    }
+            module: 'wedding',
+        },
+    },
 };

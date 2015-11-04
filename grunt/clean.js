@@ -4,5 +4,5 @@ module.exports = [
     'favicon.ico',
     'index.html',
     'dist',
-    '.tmp'
+    '.tmp',
 ];

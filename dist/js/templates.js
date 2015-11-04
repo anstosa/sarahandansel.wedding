@@ -32,7 +32,7 @@ angular.module('wedding').run(['$templateCache', function($templateCache) {
 
 
   $templateCache.put('dist/partials/welcome.html',
-    ""
+    "<span>welcome</span>"
   );
 
 }]);

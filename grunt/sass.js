@@ -3,9 +3,9 @@
 module.exports = {
     compile: {
         options: {
-            style: 'expanded'
+            style: 'expanded',
         },
-        src: 'src/css/style.scss',
-        dest: 'dist/css/style.css'
-    }
+        src  : 'src/css/style.scss',
+        dest : 'dist/css/style.css',
+    },
 };

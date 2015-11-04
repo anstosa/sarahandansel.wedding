@@ -2,13 +2,13 @@
 
 module.exports = {
     options: {
-        algorithm: 'md5',
-        length: 8
+        algorithm : 'md5',
+        length    : 8,
     },
     css: {
-        src: 'dist/css/*'
+        src: 'dist/css/*',
     },
     js: {
-        src: 'dist/js/*'
-    }
+        src: 'dist/js/*',
+    },
 };

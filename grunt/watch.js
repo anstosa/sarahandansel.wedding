@@ -4,10 +4,10 @@ module.exports = {
     files: [
         'Gruntfile.js',
         'grunt/*',
-        'src/**/*'
+        'src/**/*',
     ],
     tasks: ['dev'],
     options: {
-        livereload: true
-    }
+        livereload: true,
+    },
 };

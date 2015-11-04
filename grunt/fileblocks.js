@@ -1,7 +1,7 @@
 module.exports = {
     index: {
         options: {
-            removeAnchors: true
+            removeAnchors: true,
         },
         src: 'index.html',
         blocks: {
@@ -12,15 +12,15 @@ module.exports = {
                     'bower_components/angular-animate/angular-animate.js',
                     'src/js/app.js',
                     'dist/js/*',
-                    'src/js/*'
-                ]
+                    'src/js/*',
+                ],
             },
             styles: {
                 src: [
                     'bower_components/normalize.css/normalize.css',
-                    'dist/css/*'
-                ]
-            }
-        }
-    }
+                    'dist/css/*',
+                ],
+            },
+        },
+    },
 };

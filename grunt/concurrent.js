@@ -3,7 +3,7 @@ module.exports = {
         'newer:jshint',
         'newer:jscs',
         'newer:jade',
-        'sass',
-        'ngtemplates'
-    ]
+        'newer:sass',
+        'newer:ngtemplates',
+    ],
 };

@@ -3,19 +3,19 @@
 module.exports = {
     index: {
         options: {
-            pretty: true
+            pretty: true,
         },
         files: {
-            'index.html': 'src/index.jade'
-        }
+            'index.html': 'src/index.jade',
+        },
     },
     partials: {
         files: [{
-            expand: true,
-            flatten: true,
-            src: 'src/partials/*',
-            dest: 'dist/partials/',
-            ext: '.html'
-        }]
-    }
+            expand  : true,
+            flatten : true,
+            src     : 'src/partials/*',
+            dest    : 'dist/partials/',
+            ext     : '.html',
+        }],
+    },
 };

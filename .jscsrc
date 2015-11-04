@@ -32,7 +32,6 @@
     "disallowSpacesInsideObjectBrackets": true,
     "disallowSpacesInsideParentheses": true,
     "disallowSpacesInsideParenthesizedExpression": true,
-    "disallowTrailingComma": true,
     "maximumLineLength": 80,
     "validateQuoteMarks": "'",
     "requireBlocksOnNewline": 1,
@@ -65,5 +64,9 @@
     "validateIndentation": 4,
     "requireSpaceAfterBinaryOperators": true,
     "requireSpaceBeforeBinaryOperators": true,
-    "requireSpaceBetweenArguments": true
+    "requireSpaceBetweenArguments": true,
+    "requireTrailingComma": {
+        "ignoreSingleValue": true,
+        "ignoreSingleLine": true
+    }
 }

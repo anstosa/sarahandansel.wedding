@@ -4,22 +4,21 @@ module.exports = function () {
     return {
         default: [
             'dev',
-            'watch'
+            'watch',
         ],
         dev: [
             'concurrent:dev',
-            'fileblocks'
+            'fileblocks',
         ],
         release: [
             'clean',
             'dev',
-            'ngtemplates',
             'useminPrepare',
             'concat:generated',
             'cssmin:generated',
             'uglify:generated',
             'filerev',
-            'usemin'
-        ]
+            'usemin',
+        ],
     };
 };

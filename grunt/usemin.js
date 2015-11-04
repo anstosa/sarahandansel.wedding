@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-    html: ['index.html']
+    html: ['index.html'],
 };

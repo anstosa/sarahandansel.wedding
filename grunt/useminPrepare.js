@@ -2,7 +2,7 @@
 
 module.exports = {
     options: {
-        dest: '.'
+        dest: '.',
     },
-    src: ['index.html']
+    src: ['index.html'],
 };
