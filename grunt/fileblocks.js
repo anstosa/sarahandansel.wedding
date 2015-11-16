@@ -7,12 +7,13 @@ module.exports = {
         blocks: {
             scripts: {
                 src: [
+                    'bower_components/jQuery/dist/jquery.js',
                     'bower_components/angular/angular.js',
                     'bower_components/angular-route/angular-route.js',
                     'bower_components/angular-animate/angular-animate.js',
                     'src/js/app.js',
                     'dist/js/*',
-                    'src/js/*',
+                    'src/js/**/*.js',
                 ],
             },
             styles: {

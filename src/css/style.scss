@@ -2,3 +2,34 @@
 
 * { @include box-sizing(border-box); }
 
+body {
+    perspective: 800px;
+}
+
+.c-background {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
+
+.c-card {
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+    .c-card__front,
+    .c-card__back {
+        backface-visibility: hidden;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+
+    .c-card__front {
+        background-color: gray;
+    }
+
+    .c-card__back {
+        background-color: white;
+        transform: rotateY(180deg);
+    }
