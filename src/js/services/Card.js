@@ -16,6 +16,7 @@ function CardFactory() {
         this.left        = null;
         this.top         = null;
         this.width       = null;
+        this.scale       = null;
     }
 
     Card.prototype.toCSS = function () {
@@ -24,11 +25,11 @@ function CardFactory() {
             left      : this.left,
             top       : this.top,
             width     : this.width,
-            transform : '',
+            transform : 'scale(' + this.scale + ')',
         };
 
         if (this.isActive) {
-            css.transform = 'rotateY(180deg)';
+            css.transform += ' rotateY(180deg)';
 
             if (!this.isLandscape) {
                 css.transform += ' rotateZ(90deg)';

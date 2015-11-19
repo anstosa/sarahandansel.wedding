@@ -2,6 +2,10 @@
 
 * { @include box-sizing(border-box); }
 
+html {
+    overflow: hidden;
+}
+
 body {
     perspective: 800px;
 }
