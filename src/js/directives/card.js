@@ -19,7 +19,7 @@ function card($window, Background, Card) {
             setTimeout(function() {
                 setActive(true);
                 $('.c-loading').hide();
-            }, 3000);
+            }, 5000);
 
             $($window).on('click', function(event) {
                 setActive(!Card.isActive);
