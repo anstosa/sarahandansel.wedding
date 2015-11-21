@@ -2,13 +2,14 @@
 
 var IMAGES = [{
     url    : 'dist/img/background.jpg',
-    height : 400,
-    width  : 600,
+    height : 1694,
+    width  : 2500,
     card   : {
-        height : 62,
-        left   : 350,
-        width  : 87,
-        top    : 190,
+        height : 391,
+        left   : 1455,
+        width  : 630,
+        top    : 1040,
+        rotate : 4,
     },
 }];
 

@@ -36,7 +36,13 @@ function background($window, Background, Card) {
                     Background.top    = windowHeight / 2 - Background.height / 2;
                 }
 
-                element.css(Background.toCSS());
+                requestAnimationFrame(function() {
+                    element.css(Background.toCSS());
+                    $($window.document.body).css({
+                        height: windowHeight,
+                        width: windowWidth,
+                    });
+                })
             }
         }
     };

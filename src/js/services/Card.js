@@ -1,9 +1,9 @@
 'use strict';
 
 var ACTIVATED = {
-    height: 4,
+    height: 1029,
     padding: 20,
-    width: 6,
+    width: 1632,
 };
 
 function CardFactory() {
@@ -34,6 +34,9 @@ function CardFactory() {
             if (!this.isLandscape) {
                 css.transform += ' rotateZ(90deg)';
             }
+        }
+        else {
+            css.transform += ' rotateZ(4deg)';
         }
 
         return css;
