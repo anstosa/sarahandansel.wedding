@@ -8,6 +8,8 @@ function card($window, Background, Card) {
         restrict: 'E',
         templateUrl: 'dist/partials/card.html',
         link: function(scope, element) {
+            scope.$window = $window;
+
             var previousCard = Card;
 
             $($window).on('resize', function() {
@@ -151,7 +153,10 @@ function card($window, Background, Card) {
                     animate();
                 }
 
-                element.css(Card.toCSS());
+                element
+                    .css(Card.toCSS())
+                    .toggleClass('is-portrait', !Card.isLandscape)
+                ;
             }
         }
     };

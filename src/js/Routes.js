@@ -3,11 +3,11 @@ var DEPENDENCIES = ['$routeProvider'];
 function Routes($routeProvider) {
     $routeProvider
         .when('/', {template: ''})
-        .when('/accomodations', {
-            templateUrl : 'dist/partials/accomodations.html',
-        })
         .when('/about', {
             templateUrl : 'dist/partials/about.html',
+        })
+        .when('/accomodations', {
+            templateUrl : 'dist/partials/accomodations.html',
         })
         .when('/party', {
             templateUrl : 'dist/partials/party.html',
