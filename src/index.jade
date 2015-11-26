@@ -30,12 +30,15 @@ html(
         // endfileblock
         // endbuild
 
-    body
+    body(resize-watcher)
         background
-        h1.c-headline Sarah & Ansel
+        div(ng-cloak, ng-show='isWide')
+            h1.c-headline Sarah & Ansel
+            h2.c-headline.c-headline--subhead July 26, 2016
+        div(ng-cloak, ng-hide='isWide')
+            h1.c-headline S & A
+            h2.c-headline.c-headline--subhead July 26
         card
-        div.c-loading
-
 
         // build:js(.) dist/js/SarahAndAnsel.min.js
         // fileblock:js scripts

@@ -22,10 +22,11 @@ function CardFactory() {
     Card.prototype.toCSS = function () {
         var css = {
             height    : this.height,
+            fontSize  : this.height / 20,
             left      : this.left,
             top       : this.top,
             width     : this.width,
-            transform : 'scale(' + this.scale + ')',
+            transform : 'translateZ(0) scale(' + this.scale + ')',
         };
 
         if (this.isActive) {

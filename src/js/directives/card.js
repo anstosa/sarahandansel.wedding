@@ -17,12 +17,6 @@ function card($window, Background, Card) {
             });
             render();
 
-            $('.c-loading').addClass('c-loading--is-loaded');
-            setTimeout(function() {
-                setActive(true);
-                $('.c-loading').hide();
-            }, 5000);
-
             $($window).on('click', function(event) {
                 setActive(!Card.isActive);
             });
@@ -46,9 +40,8 @@ function card($window, Background, Card) {
                 }
                 requestAnimationFrame(function() {
                     render({isActive: isActive});
-                    $('.c-background').toggleClass(
-                        'c-background--is-faded',
-                        isActive
+                    $('.c-background, .c-headline').toggleClass(
+                        'is-faded', isActive
                     );
                 })
             }
