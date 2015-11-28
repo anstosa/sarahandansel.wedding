@@ -54,7 +54,7 @@ body {
   from {
     box-shadow: initial; }
   50% {
-    box-shadow: -30px 0 40px rgba(0, 0, 0, 0.4), 0 0 0 1000px rgba(255, 255, 255, 0.4) inset; }
+    box-shadow: -30px 0 40px rgba(0, 0, 0, 0.4), 0 0 0 10000px rgba(255, 255, 255, 0.4) inset; }
   to {
     box-shadow: initial; } }
 
@@ -62,7 +62,7 @@ body {
   from {
     box-shadow: initial; }
   50% {
-    box-shadow: -30px 0 40px rgba(0, 0, 0, 0.4), 0 0 0 1000px rgba(255, 255, 255, 0.4) inset; }
+    box-shadow: -30px 0 40px rgba(0, 0, 0, 0.4), 0 0 0 10000px rgba(255, 255, 255, 0.4) inset; }
   to {
     box-shadow: initial; } }
 
@@ -70,7 +70,7 @@ body {
   from {
     box-shadow: initial; }
   50% {
-    box-shadow: -30px 0 40px rgba(0, 0, 0, 0.4), 0 0 0 1000px rgba(255, 255, 255, 0.4) inset; }
+    box-shadow: -30px 0 40px rgba(0, 0, 0, 0.4), 0 0 0 10000px rgba(255, 255, 255, 0.4) inset; }
   to {
     box-shadow: initial; } }
 
@@ -115,7 +115,7 @@ body {
     -webkit-animation-name: none;
     -moz-animation-name: none;
     animation-name: none;
-    box-shadow: -30px 0 40px rgba(0, 0, 0, 0.4), 0 0 0 1000px rgba(255, 255, 255, 0.4) inset; }
+    box-shadow: -30px 0 40px rgba(0, 0, 0, 0.4), 0 0 0 10000px rgba(255, 255, 255, 0.4) inset; }
 
 .c-card__back {
   background-image: url(/dist/img/back.png);

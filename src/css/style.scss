@@ -68,7 +68,7 @@ $z-headline: $z-background + 1;
 }
 
 $card-shadow: -30px 0 40px transparentize(black, 0.6);
-$card-fade: 0 0 0 1000px transparentize(white, 0.6) inset;
+$card-fade: 0 0 0 10000px transparentize(white, 0.6) inset;
 $card-select: $card-shadow, $card-fade;
 @include keyframes(pulse) {
     from  {

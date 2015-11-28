@@ -119,23 +119,23 @@ function card($window, Background, Card) {
 
                 if (!Card.isActive) {
                     var scale = (
-                        Background.currentImage.width /
+                        Background.IMAGE.width /
                         Background.width
                     );
-                    var targetWidth = Background.currentImage.card.width  / scale;
+                    var targetWidth = Background.IMAGE.card.width  / scale;
                     Card.scale = targetWidth / Card.width;
 
                     var actualWidth = Card.width * Card.scale;
                     var actualHeight = Card.height * Card.scale;
 
                     Card.left = (
-                        Background.currentImage.card.left / scale +
+                        Background.IMAGE.card.left / scale +
                         Background.left -
                         Card.width / 2 +
                         actualWidth / 2
                     );
                     Card.top = (
-                        Background.currentImage.card.top / scale +
+                        Background.IMAGE.card.top / scale +
                         Background.top -
                         Card.height / 2 +
                         actualHeight / 2

@@ -6,6 +6,8 @@ var ACTIVATED = {
     width: 1632,
 };
 
+ACTIVATED.aspect = ACTIVATED.height / ACTIVATED.width;
+
 function CardFactory() {
     function Card() {
         this.ACTIVATED   = ACTIVATED;

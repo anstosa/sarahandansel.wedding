@@ -1,6 +1,6 @@
 'use strict';
 
-var IMAGES = [{
+var IMAGE = {
     url    : 'dist/img/background.jpg',
     height : 1694,
     width  : 2500,
@@ -11,22 +11,22 @@ var IMAGES = [{
         top    : 1040,
         rotate : 4,
     },
-}];
+};
+
+IMAGE.aspect = IMAGE.height / IMAGE.width;
 
 function BackgroundFactory() {
     function Background() {
-        this.IMAGES       = IMAGES;
-
-        this.height       = null;
-        this.currentImage = this.IMAGES[0];
-        this.left         = null;
-        this.top          = null;
-        this.width        = null;
+        this.IMAGE  = IMAGE;
+        this.height = null;
+        this.left   = null;
+        this.top    = null;
+        this.width  = null;
     }
 
     Background.prototype.toCSS = function () {
         return {
-            backgroundImage : 'url(' + this.currentImage.url + ')',
+            backgroundImage : 'url(' + IMAGE.url + ')',
             height          : this.height,
             left            : this.left,
             top             : this.top,
