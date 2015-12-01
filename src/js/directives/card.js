@@ -1,8 +1,8 @@
 'use strict';
 
-var DEPENDENCIES = ['$route', '$window', 'Background', 'Card'];
+var DEPENDENCIES = ['$location', '$route', '$window', 'Background', 'Card'];
 
-function card($route, $window, Background, Card) {
+function card($location, $route, $window, Background, Card) {
     return {
         replace: true,
         restrict: 'E',
@@ -12,7 +12,9 @@ function card($route, $window, Background, Card) {
 
             var previousCard = Card;
 
-            $($window).on('resize', render);
+            $($window).on('resize', function() {
+                render();
+            });
             $(function() {
                 render();
                 setActive(Boolean(
@@ -40,6 +42,9 @@ function card($route, $window, Background, Card) {
             function setActive(isActive) {
                 if (typeof isActive === 'undefined') {
                     isActve = !Card.isActive;
+                }
+                if (!$route.current || !$route.current.loadedTemplateUrl) {
+                    $location.path('/story');
                 }
                 requestAnimationFrame(function() {
                     render({isActive: isActive});
