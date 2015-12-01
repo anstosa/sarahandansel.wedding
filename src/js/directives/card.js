@@ -1,8 +1,8 @@
 'use strict';
 
-var DEPENDENCIES = ['$window', 'Background', 'Card'];
+var DEPENDENCIES = ['$route', '$window', 'Background', 'Card'];
 
-function card($window, Background, Card) {
+function card($route, $window, Background, Card) {
     return {
         replace: true,
         restrict: 'E',
@@ -12,10 +12,13 @@ function card($window, Background, Card) {
 
             var previousCard = Card;
 
-            $($window).on('resize', function() {
+            $($window).on('resize', render);
+            $(function() {
                 render();
+                setActive(Boolean(
+                    $route.current && $route.current.loadedTemplateUrl
+                ));
             });
-            render();
 
             $($window).on('click', function(event) {
                 setActive(!Card.isActive);

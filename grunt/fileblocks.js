@@ -18,7 +18,8 @@ module.exports = {
             styles: {
                 src: [
                     'bower_components/normalize.css/normalize.css',
-                    'dist/css/*',
+                    'dist/font/*.css',
+                    'dist/css/*.css',
                 ],
             },
         },

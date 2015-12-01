@@ -6,7 +6,7 @@
 }
 
 html {
-    font-family: 'Marck Script', sans-serif;
+    font-family: 'Josefin Slab', sans-serif;
     font-size: 18px;
     overflow: hidden;
 }
@@ -32,12 +32,12 @@ $z-background: 1;
     }
 }
 
-$headline-font: 'Josefin Slab', sans-serif;
+$headline-font: jellyka_saint-andrews_queenRg, sans-serif;
 $headline-position: 20px;
 $headline-size: 82px;
+$headline-shadow: 0 0 50px black;
 $z-headline: $z-background + 1;
 .c-headline {
-    $shadow: 0 0 50px black;
     width: 100%;
     color: white;
     font-family: $headline-font;
@@ -48,10 +48,9 @@ $z-headline: $z-background + 1;
     opacity: 1;
     position: absolute;
     text-align: center;
-    text-transform: uppercase;
     transition: opacity 0.75s;
     font-size: $headline-size;
-    text-shadow: $shadow, $shadow;
+    text-shadow: $headline-shadow, $headline-shadow;
     top: $headline-position;
     z-index: $z-headline;
 
@@ -109,9 +108,11 @@ $z-card: $z-headline + 1;
         background-image: url(/dist/img/front.png);
         cursor: pointer;
         color: white;
-        font-size: 4em;
-        padding-top: 30%;
+        font-size: 5em;
+        font-family: jellyka_saint-andrews_queenRg, sans-serif;
+        padding-top: 25%;
         text-align: center;
+        text-shadow: $headline-shadow;
         transition: all 0.15s;
 
         &:hover {
@@ -132,12 +133,41 @@ $z-card: $z-headline + 1;
         $padding: 20px;
         .c-card__back__content {
             height: $content-height;
+            font-size: 0.7em;
             left: 0;
             overflow: auto;
             padding: $padding;
             position: absolute;
             top: 100% - $content-height;
             width: $content-width;
+
+            article {
+                clear: both;
+                display: block;
+
+                img {
+                    float: left;
+                    max-width: 10em;
+                    margin-right: 1em;
+                }
+
+                img,
+                p:last-child {
+                    margin-bottom: 4em;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+
+            li {
+                margin-bottom: 1em;
+            }
+
+            a {
+                color: #222;
+            }
         }
 
         .c-card__back__address {
@@ -157,9 +187,6 @@ $z-card: $z-headline + 1;
 
     .c-nav__item {
         font-family: $headline-font;
-        font-size: 22px;
-        line-height: 40px;
-        text-transform: uppercase;
 
         &.is-selected,
         &:hover {

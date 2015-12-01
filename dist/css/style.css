@@ -5,7 +5,7 @@
   display: none !important; }
 
 html {
-  font-family: 'Marck Script', sans-serif;
+  font-family: 'Josefin Slab', sans-serif;
   font-size: 18px;
   overflow: hidden; }
 
@@ -28,7 +28,7 @@ body {
 .c-headline {
   width: 100%;
   color: white;
-  font-family: "Josefin Slab", sans-serif;
+  font-family: jellyka_saint-andrews_queenRg, sans-serif;
   font-weight: 300;
   left: 0;
   line-height: 82px;
@@ -36,7 +36,6 @@ body {
   opacity: 1;
   position: absolute;
   text-align: center;
-  text-transform: uppercase;
   transition: opacity 0.75s;
   font-size: 82px;
   text-shadow: 0 0 50px black, 0 0 50px black;
@@ -107,9 +106,11 @@ body {
   background-image: url(/dist/img/front.png);
   cursor: pointer;
   color: white;
-  font-size: 4em;
-  padding-top: 30%;
+  font-size: 5em;
+  font-family: jellyka_saint-andrews_queenRg, sans-serif;
+  padding-top: 25%;
   text-align: center;
+  text-shadow: 0 0 50px black;
   transition: all 0.15s; }
   .c-card__front:hover {
     -webkit-animation-name: none;
@@ -124,12 +125,29 @@ body {
 
 .c-card__back__content {
   height: 74%;
+  font-size: 0.7em;
   left: 0;
   overflow: auto;
   padding: 20px;
   position: absolute;
   top: 26%;
   width: 68.5%; }
+  .c-card__back__content article {
+    clear: both;
+    display: block; }
+    .c-card__back__content article img {
+      float: left;
+      max-width: 10em;
+      margin-right: 1em; }
+    .c-card__back__content article img,
+    .c-card__back__content article p:last-child {
+      margin-bottom: 4em; }
+  .c-card__back__content img {
+    width: 100%; }
+  .c-card__back__content li {
+    margin-bottom: 1em; }
+  .c-card__back__content a {
+    color: #222; }
 
 .c-card__back__address {
   left: 68.5%;
@@ -145,10 +163,7 @@ body {
   padding-left: 10%; }
 
 .c-nav__item {
-  font-family: "Josefin Slab", sans-serif;
-  font-size: 22px;
-  line-height: 40px;
-  text-transform: uppercase; }
+  font-family: jellyka_saint-andrews_queenRg, sans-serif; }
   .c-nav__item.is-selected, .c-nav__item:hover {
     font-weight: bold;
     list-style: disc; }

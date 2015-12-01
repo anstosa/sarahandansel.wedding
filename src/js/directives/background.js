@@ -9,7 +9,7 @@ function background($window, Background, Card) {
         templateUrl: 'dist/partials/background.html',
         link: function(scope, element) {
             $($window).on('resize', render);
-            render();
+            $(render);
 
             function render() {
                 var windowHeight = $($window).height();

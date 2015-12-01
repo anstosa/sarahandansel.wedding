@@ -3,7 +3,7 @@ div.c-card
     div.c-card__back
         div.c-card__back__content(ng-view)
         div.c-card__back__address
-            - var nav = {'About': '#/about', 'Accomodations': '#/accomodations', 'Party': '#/party', 'Story': '#/story', 'Tips': '#/tips', 'Wedding': '#/wedding', 'Welcome': '#/welcome'}
+            - var nav = {'A Love Story': '#/story', 'The Wedding Party': '#/party', 'Welcome Day': '#/welcome', 'Wedding Day': '#/wedding', 'Dingle, Co. Kerry': '#/dingle', 'Visiting the West Coast': '#/coast', 'Accommodations': '#/accommodations', 'Ireland Travel Tips': '#/ireland'}
             ul.c-nav
                 each path, name in nav
                     li.c-nav__item(ng-class='{"is-selected": $window.location.hash === "#{path}"}')

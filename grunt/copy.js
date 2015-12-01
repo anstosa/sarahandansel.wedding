@@ -17,4 +17,12 @@ module.exports = {
             dest    : 'dist/img/',
         }],
     },
+    fonts: {
+        files: [{
+            expand  : true,
+            flatten : true,
+            src     : 'src/font/*',
+            dest    : 'dist/font/',
+        }],
+    },
 };

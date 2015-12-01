@@ -3,26 +3,29 @@ var DEPENDENCIES = ['$routeProvider'];
 function Routes($routeProvider) {
     $routeProvider
         .when('/', {template: ''})
-        .when('/about', {
-            templateUrl : 'dist/partials/about.html',
-        })
-        .when('/accomodations', {
-            templateUrl : 'dist/partials/accomodations.html',
+        .when('/story', {
+            templateUrl : 'dist/partials/story.html',
         })
         .when('/party', {
             templateUrl : 'dist/partials/party.html',
         })
-        .when('/story', {
-            templateUrl : 'dist/partials/story.html',
-        })
-        .when('/tips', {
-            templateUrl : 'dist/partials/tips.html',
+        .when('/welcome', {
+            templateUrl : 'dist/partials/welcome.html',
         })
         .when('/wedding', {
             templateUrl : 'dist/partials/wedding.html',
         })
-        .when('/welcome', {
-            templateUrl : 'dist/partials/welcome.html',
+        .when('/dingle', {
+            templateUrl : 'dist/partials/dingle.html',
+        })
+        .when('/coast', {
+            templateUrl : 'dist/partials/coast.html',
+        })
+        .when('/accommodations', {
+            templateUrl : 'dist/partials/accommodations.html',
+        })
+        .when('/ireland', {
+            templateUrl : 'dist/partials/ireland.html',
         })
         .otherwise({redirectTo: '/'})
     ;
