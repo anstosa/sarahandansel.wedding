@@ -40,6 +40,10 @@ body {
   font-size: 82px;
   text-shadow: 0 0 50px black, 0 0 50px black;
   top: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   z-index: 2; }
   .c-headline.is-faded {
     opacity: 0; }
@@ -111,7 +115,11 @@ body {
   padding-top: 25%;
   text-align: center;
   text-shadow: 0 0 50px black;
-  transition: all 0.15s; }
+  transition: all 0.15s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .c-card__front:hover {
     -webkit-animation-name: none;
     -moz-animation-name: none;

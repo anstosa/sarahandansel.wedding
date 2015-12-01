@@ -52,6 +52,7 @@ $z-headline: $z-background + 1;
     font-size: $headline-size;
     text-shadow: $headline-shadow, $headline-shadow;
     top: $headline-position;
+    @include user-select(none);
     z-index: $z-headline;
 
     &.is-faded {
@@ -114,6 +115,7 @@ $z-card: $z-headline + 1;
         text-align: center;
         text-shadow: $headline-shadow;
         transition: all 0.15s;
+        @include user-select(none);
 
         &:hover {
             @include animation-name(none);
