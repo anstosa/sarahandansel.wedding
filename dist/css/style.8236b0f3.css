@@ -11,8 +11,7 @@ html {
 
 body {
   background-color: white;
-  overflow: hidden;
-  perspective: 2000px; }
+  overflow: hidden; }
 
 .c-background {
   background-repeat: no-repeat;
@@ -53,6 +52,15 @@ body {
   font-size: 62px;
   top: 102px; }
 
+.c-container {
+  height: 100%;
+  left: 0;
+  perspective: 2000px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3; }
+
 @-webkit-keyframes pulse {
   from {
     box-shadow: initial; }
@@ -80,7 +88,7 @@ body {
 .c-card {
   position: absolute;
   transform-style: preserve-3d;
-  z-index: 3; }
+  z-index: 4; }
 
 .c-card__front,
 .c-card__back {

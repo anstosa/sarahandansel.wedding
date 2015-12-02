@@ -14,7 +14,6 @@ html {
 body {
     background-color: white;
     overflow: hidden;
-    perspective: 2000px;
 }
 
 $z-background: 1;
@@ -67,6 +66,17 @@ $z-headline: $z-background + 1;
     top: $headline-position + $headline-size;
 }
 
+$z-container: $z-headline + 1;
+.c-container {
+    height: 100%;
+    left: 0;
+    perspective: 2000px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: $z-container;
+}
+
 $card-shadow: -30px 0 40px transparentize(black, 0.6);
 $card-fade: 0 0 0 10000px transparentize(white, 0.6) inset;
 $card-select: $card-shadow, $card-fade;
@@ -82,7 +92,7 @@ $card-select: $card-shadow, $card-fade;
     }
 }
 
-$z-card: $z-headline + 1;
+$z-card: $z-container + 1;
 .c-card {
     position: absolute;
     transform-style: preserve-3d;
